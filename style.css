@@ -1,0 +1,374 @@
+body , * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 10px 15px;
+    background-color: #000;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* برای بخش چپ هیدر */
+.header__search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo__a__svg path {
+    fill: #ffffff;
+}
+
+/* برای بخش وسط هدیر */
+.header__search__home-svg {
+    /* background-color: black; */
+    background-color: #242424;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+
+    border: none;
+    margin-right: 10px;
+}
+
+.header__search__home-svg span img {
+    width: 30px;
+}
+
+.header__search__input-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.header__search__input-search__icon-search {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+}
+
+.header__search__input-search__icon-search img {
+    width: 100%;
+    height: 100%;
+}
+
+.header__search__input-search__input input {
+    width: 460px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: #242424;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 45px;
+    padding-right: 12px;
+    outline: none;
+    transition: background-color 0.2s ease;
+}
+
+.header__search__input-search__input input::placeholder {
+    color: #b3b3b3;
+}
+
+.header__search__input-search__input input:focus {
+    background-color: #2a2a2a;
+}
+
+/* برای بخش راست هیدر */
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 16px; 
+}
+
+.header__actions__a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    background-color: #242424;
+    padding: 6px 12px;
+    border-radius: 202px;
+    transition: background-color 0.2s ease;
+}
+
+.header__actions__a:hover {
+    background-color: #2a2a2a;
+}
+
+.header__actions__a__span-svg img {
+    width: 30px;
+    height: 30px;
+}
+
+.header__actions__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+}
+
+.header__actions__button:hover {
+    background-color: #2a2a2a;
+}
+
+.header__actions__button img {
+    width: 30px;
+    height: 30px;
+}
+
+.header__actions__profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: none;
+    background-color: #333;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.header__actions__profile:hover {
+    opacity: 0.8;
+}
+
+.header__actions__profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* مین چپ */
+.main__sidebar {
+    width: 280px;
+    background-color: #121212;
+    color: #fff;
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+/* بخش Your Library */
+.main__sidebar__your-library {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__sidebar__your-library h1 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.main__sidebar__your-library div img {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+.main__sidebar__your-library div img:hover {
+    opacity: 1;
+}
+
+/* دکمه‌های By Spotify / By You */
+.main__sidebar__by-spotify-or-by-you {
+    display: flex;
+    gap: 8px;
+}
+
+.main__sidebar__by-spotify-or-by-you button {
+    background-color: #242424;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.main__sidebar__by-spotify-or-by-you button:hover {
+    background-color: #2a2a2a;
+}
+
+/* آیکون سرچ + Recents */
+.main__sidebar__search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.main__sidebar__search-icon img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.main__sidebar__search-icon img:hover {
+    opacity: 1;
+}
+
+.main__sidebar__search-icon div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.main__sidebar__search-icon div p {
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+/* لیست پلی‌لیست‌ها */
+.main__sidebar__playlists ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main__sidebar__playlists li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.main__sidebar__playlists li:hover {
+    background-color: #2a2a2a;
+}
+
+.main__sidebar__playlists li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.main__sidebar__playlists li p:first-child {
+    font-weight: 600;
+}
+
+.main__sidebar__playlists li p:last-child {
+    color: #b3b3b3;
+    font-size: 13px;
+}
+
+/* مین وسط */
+main {
+    display: flex;
+    height: calc(100vh - 70px); /* ارتفاع کل صفحه منهای هدر */
+    background-color: #121212;
+    color: #fff;
+}
+
+/* بخش پلی‌لیست */
+.main__playlist {
+    flex: 1; /* بقیه‌ی فضا رو پر کنه */
+    padding: 24px 32px;
+    background: linear-gradient(180deg, #1f1f1f 0%, #121212 100%);
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+/* هدر پلی‌لیست */
+.main__playlist__header {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.main__playlist__header__caver-playlist img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #242424;
+}
+
+.main__playlist__header__name-playlist p {
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.main__playlist__header__name-playlist h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.main__playlist__header__name-playlist span {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+/* لیست ترک‌ها */
+.main__playlist__trach-name ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.main__playlist__trach-name ul li:first-child {
+    display: grid;
+    grid-template-columns: 0.2fr 2fr 1fr 1fr 0.5fr;
+    align-items: center;
+    border-bottom: 1px solid #2a2a2a;
+    padding-bottom: 10px;
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+.main__playlist__trach-name ul li:nth-child(n+2) {
+    display: grid;
+    grid-template-columns: 0.2fr 2fr 1fr 1fr 0.5fr;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.main__playlist__trach-name ul li:nth-child(n+2):hover {
+    background-color: #1a1a1a;
+}
+
+.main__playlist__trach-name ul li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.main__playlist__trach-name ul li p {
+    margin: 0;
+}
+
+.main__playlist__trach-name ul li div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
